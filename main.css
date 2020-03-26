@@ -1,0 +1,16 @@
+.hidden {
+    display: none;
+}
+
+#main {
+    font-size: 26px;
+    color: #96ffc2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.category {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+}
