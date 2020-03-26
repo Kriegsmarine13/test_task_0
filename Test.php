@@ -52,7 +52,7 @@ class Test {
             $result[$matches[1][$i]]['English Title'] = $matches[3][$i];
         }
         echo("<br>What do we got?..<br>");
-        echo("<pre>".json_encode($result, JSON_PRETTY_PRINT)."</pre>");
+        echo("<pre>".json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE)."</pre>");
     }
 
     //4 Задание

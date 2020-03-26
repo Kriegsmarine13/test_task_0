@@ -15,18 +15,18 @@ $Test = new Test();
     <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-<h1>Да хуй знает с этими заголовками</h1>
+<h1>Заголовок 1</h1>
 <?php
-$Test->printSelectBox(["Gay Niggers From Outer Space", "New Kids Turbo", "New Kids Nitro", "100 Tears", "Snuff 102"]);
+$Test->printSelectBox(["Avatar", "New Kids Turbo", "New Kids Nitro", "100 Tears", "Snuff 102"]);
 $Test->scrapKinorium("https://ru.kinorium.com/");
 ?>
-<h2>Ebola</h2>
+<h2>Заголовок 2</h2>
 <div class="tree">
-    <div id="main">Фильмы</div>
+    <div id="main">Фильмы (нажми меня)</div>
     <div id="sub-block" class="hidden">
-        <div id="pic" class="category">- S kartinkoy</div>
+        <div id="pic" class="category">- S kartinkoy(и меня нажми)</div>
         <div id="pic-children" class="hidden"></div>
-        <div id="nopic" class="category">- Bez kartinki</div>
+        <div id="nopic" class="category">- Bez kartinki(и даже меня)</div>
         <div id="nopic-children" class="hidden"></div>
     </div>
 </div>

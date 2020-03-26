@@ -11,16 +11,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
         } else {
             console.log("Request failed!");
         }
-    }
+    };
 
     xhr.open('GET', 'getMovies.php');
     xhr.send();
     xhr.onreadystatechange = function() {
         if(xhr.readyState==4) {
-            // console.log(xhr.responseText);
             let response = JSON.parse(xhr.responseText);
-            // console.log(response);
-            console.log(picsBlock);
             for(let el of response){
                 if(el.has_picture == 1) {
                     picsBlock.innerHTML += "<p> - - "+el.title+"</p>";
@@ -30,9 +27,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
             }
 
         }
-    }
-
-    console.log(picsCategory)
+    };
 
     document.getElementById("main").onclick = function(event){
         if(document.getElementById("sub-block").classList.contains("hidden")) {
@@ -40,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         } else {
             document.getElementById("sub-block").classList.add("hidden");
         }
-    }
+    };
 
     picsCategory.onclick = function(event){
         if(picsBlock.classList.contains("hidden")) {
@@ -48,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         } else {
             picsBlock.classList.add("hidden");
         }
-    }
+    };
 
     nopicsCategory.onclick = function(event){
         if(nopicsBlock.classList.contains("hidden")) {

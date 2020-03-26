@@ -12,12 +12,8 @@ require('Database.php');
         );
         $query->execute();
         $data = $query->fetchAll();
-//        header('Content-Type: application/json');
         echo json_encode($data);
     } catch(Exception $e) {
-//        echo("<br>Error recieving movies<br>");
         header('Content-Type: application/json');
         echo json_encode($e);
     }
-//    return ["ass" => true, "pussy" => null];
-//}
